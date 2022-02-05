@@ -1,0 +1,375 @@
+:root {
+  --body-bg: #fff;
+  --text-col: #22343d;
+  --btn-bg: #02897a;
+  --link-col: #02897a;
+  --text-btn: #173a56;
+  --text-white: #fff;
+  --text-hover: #02897a;
+  --btn-border: #bcd0e5;
+  --menu-bg: #121213c4;
+  --menu-text: #fff;
+  --logo: url('../img/logo-white.svg');
+  --logo-footer: url('../img/footer-logo-dark.svg');
+  --product-bg: url('../img/produc-bg-img.png');
+  --quick-bg: url('../img/quick-bg-img.png');
+  --enterprice-bg: url('../img/enterprice-bg-white.png');
+}
+
+.dark {
+  --body-bg: #1f2e35;
+  --text-col: #fff;
+  --btn-bg: #02897a;
+  --link-col: #02897a;
+  --text-btn: #fff;
+  --text-white: #fff;
+  --text-hover: #02897a;
+  --btn-border: #bcd0e5;
+  --menu-bg: rgb(12, 12, 12);
+  --menu-text: #1f2e35;
+  --logo: url('../img/logo-dark.svg');
+  --logo-footer: url('../img/footer-logo-white.svg');
+  --product-bg: url('../img/product-bg-blac-img.png');
+  --quick-bg: url('../img/quick-bg-dark-img.png');
+  --enterprice-bg: url('../img/enterprice-bg-dark.png');
+}
+
+.price__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--text-col);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.price__title {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+
+/* MAIN ENTERPRISE PART  */
+
+.enterprice {
+  background-image: var(--enterprice-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: var(--text-col);
+  padding: 53px 0;
+}
+
+.enterprice__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+
+.enterprice__title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 51px;
+  margin-bottom: 8px;
+}
+
+.enterprice__desc {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 32px;
+}
+
+.enterprice__btn {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  border-radius: 8px;
+  padding: 11px 18px;
+  margin: 0 auto;
+}
+.enterprice__btn:hover {
+  background-color: transparent;
+  border: 1px solid #02897a;
+  color: #02897a;
+}
+
+  /* MAIN BEING PART */
+
+.being {
+  padding: 150px 0;
+  color: var(--text-col);
+}
+
+.being__title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 51px;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.being__img {
+  width: 528px;
+  height: 392px;
+}
+
+.being__list {
+  width: 543px;
+  list-style-type: none;
+
+}
+
+.being__item {
+  margin-bottom: 32px;
+}
+
+.being__subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 23px;
+}
+
+.being__desc {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.being__subtitle::before,
+.account::before,
+.univer::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-color: #f4f5f7;
+  background-image: url('../img/enter-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.account::before {
+  background-image: url('../img/account-icon.svg');
+}
+
+.univer::before {
+  background-image: url('../img/univer-icon.svg');
+}
+
+  /* MAIN ASKED PART  */
+
+.asked {
+  padding-bottom: 150px;
+  color: var(--text-col);
+}
+
+.asked__title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 51px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.asked__desc {
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.asked__list {
+  width: 85%;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.asked__item {
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 15px;
+  margin-bottom: 17px;
+}
+
+.asked__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 14px;
+}
+
+.asked__item::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-color: #02897a;
+  border-radius: 50%;
+}
+
+.asked__text::after, .asked__text::before {
+  content: '';
+  position: relative;
+  top: -5.5px;
+  left: -20px;
+  display: inline-block;
+  width: 15px;
+  height: 3px;
+  background-color: #fff;
+  transform: rotate(90deg);
+  transition: all 0.3s linear;
+}
+.asked__text::after {
+  top: -5.5px;
+  left: -101.6%;
+  transform: rotate(0deg);
+}
+.asked__item:nth-child(2)
+.asked__text::after {
+  left: -101.6%;
+}
+.asked__item:nth-child(3)
+.asked__text::after {
+  left: -101.9%;
+}
+.asked__item:nth-child(4)
+.asked__text::after {
+  left: -101.5%;
+}
+
+.asked__item:hover
+.asked__text::after {
+  transform: rotate(180deg);
+  background-color: #fff;
+}
+.asked__item:hover
+.asked__text::before {
+  transform: rotate(180deg);
+  background-color: #fff;
+}
+
+.asked__info {
+  display: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.asked__item:hover
+.asked__info {
+  display: block;
+}
+
+
+/* MOBILE VERSION CSS  */
+
+@media screen and (max-width: 576px) {
+
+  /* MAIN ENTERPRISE PART */
+
+  .enterprice {
+    padding: 47px 0;
+  }
+
+  .enterprice__name {
+    margin-bottom: 24px;
+  }
+
+  .enterprice__title {
+    margin-bottom: 25px;
+  }
+
+  .enterprice__desc {
+    margin-bottom: 32px;
+  }
+
+  /* MAIN BEING PART */
+
+  .being {
+    padding: 150px 0;
+  }
+
+  .being__title {
+    margin-bottom: 33px;
+  }
+
+  .being__img {
+    width: 352px;
+    height: 288px;
+    margin-bottom: 31px;
+  }
+
+  .being__list {
+    width: 100%;
+  }
+
+  .being__item {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .being__subtitle {
+    margin-bottom: 16px;
+  }
+
+  /* MAIN ASKED PART  */
+
+  .asked {
+    padding-bottom: 100px;
+  }
+
+  .asked__title {
+    margin-bottom: 16px;
+  }
+
+  .asked__desc {
+    margin-bottom: 31px;
+  }
+
+  .asked__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  .asked__item {
+    margin-bottom: 24px;
+  }
+
+  .asked__text::after {
+    top: -5.5px;
+    left: -101.5%;
+  }
+  .asked__item:nth-child(2)
+  .asked__text::after {
+    left: -101.4%;
+  }
+  .asked__item:nth-child(3)
+  .asked__text::after {
+    left: -101.9%;
+  }
+  .asked__item:nth-child(4)
+  .asked__text::after {
+    left: -101.3%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
